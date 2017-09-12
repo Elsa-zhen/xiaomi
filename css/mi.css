@@ -584,6 +584,10 @@
 	background-color:blue;
 	margin-right:14px;
 	margin-bottom:14px;
+	transition:all .5s ease;
+}
+.left-bigpicture:hover{
+	transform:translateY(-10px);
 }
 .home-bottom-right{
 	width:978px;
@@ -591,13 +595,55 @@
 	background-color:#f5f5f5;
 	float:left;
 }
+/*盒子*/
 .home-bottom-right-list{
 	width:234px;
 	height:300px;
 	float:left;
 	background-color:#fff;
 	margin:0 14px 14px 0;
+	position:relative;
+	overflow:hidden;   /*超出的部分隐藏，鼠标移入后才显示出来*/
+	transition:all 1s ease;			/*谁动给谁加过渡*/
 }
+.home-bottom-right-list:hover{
+	transform:translateY(-10px);  /*正为负，反为正；*/
+}
+
+
+	/*效果*/
+.home-bottom-right-list-xiaoguo{
+	width:234px;
+	height:80px;
+	padding:8px 30px;
+	box-sizing:border-box;
+	background-color:#ff6700;
+	position:absolute;
+	left:0;
+	/*bottom:0;*/ /* 因为是从下往上走 所以是-100px*/
+	bottom:-100px;	
+	transition:all 1s ease;
+}
+.home-bottom-right-list:hover .home-bottom-right-list-xiaoguo{
+	bottom:0;
+	background-color:rgb(255,103,0);
+}
+.home-bottom-right-list-xiaoguo p{
+	color:#fff;
+	font-size:12px;
+	width:174px;
+	height:36px;
+	line-height:18px;
+	text-align:center;
+	margin-bottom:5px;
+}
+.home-bottom-right-list-xiaoguo span{
+	width:174px;
+	height:18px;
+	color:rgba(255,255,255,0.6);
+	font-size:12px;
+}
+	/*效果结束*/
 .home-bottom-right-list h6{
 	width:64px;
 	height:20px;
@@ -651,7 +697,10 @@
 	background-color:#fefefe;
 	float:right;
 	margin-bottom:14px;
-
+	transition:all .5s ease;
+}
+.home-only:hover{
+	transform:translateY(-10px);
 }
 .home-only-image{
 	width:80px;
@@ -743,7 +792,44 @@
 	float:left;
 	background-color:#fff;
 	margin:0 14px 14px 0;
+	transition:all .5s ease;
+	position:relative;
+	overflow:hidden;
 }
+.capacity-bottom-list:hover{
+	transform:translateY(-10px);
+}
+/*效果盒子*/
+.capacity-bottom-right-list-xiaoguo{
+	position:absolute;
+	left:0;
+	bottom:-100px;
+	width:234px;
+	height:80px;
+	padding:8px 30px;
+	box-sizing:border-box;
+	background-color:#ff6700;
+	transition:all 1s ease;
+}
+.capacity-bottom-list:hover .capacity-bottom-right-list-xiaoguo{
+	bottom:0;
+}
+.capacity-bottom-right-list-xiaoguo p{
+	color:#fff;
+	font-size:12px;
+	width:174px;
+	height:36px;
+	line-height:18px;
+	text-align:center;
+	margin-bottom:5px;
+}
+.capacity-bottom-right-list-xiaoguo span{
+	width:174px;
+	height:18px;
+	color:rgba(255,255,255,0.6);
+	font-size:12px;
+}
+	/*效果结束*/
 .capacity-bottom-list h6{
 	width:64px;
 	height:20px;
@@ -797,7 +883,10 @@
 	background-color:#fff;
 	float:right;
 	margin-bottom:14px;
-
+	transition:all .5s ease;
+}
+.capacity-only:hover{
+	transform:translateY(-10px);
 }
 .capacity-only-image{
 	width:80px;
@@ -894,6 +983,10 @@
 	background-color:#fff;
 	float:left;
 	margin-right:14px;
+	transition:all .5s ease;
+}
+.recommend-list:hover{
+	transform:translateY(-10px);
 }
 .recommend-list-picture{
 	width:140px;
@@ -955,6 +1048,10 @@
 	background-color:#fff;
 	float:left;
 	margin-right:14px;
+	transition:all .5s ease;
+}
+.product-list:hover{
+	transform:translateY(-10px);
 }
 .product-picture{
 	width:296px;
@@ -1029,6 +1126,10 @@
 	margin-right:14px;
 	float:left;
 	position:relative;
+	transition:all .5s ease;
+}
+.content-list:hover{
+	transform:translateY(-10px);
 }
 .content-list h5{
 	height:24px;
@@ -1193,6 +1294,10 @@
 	margin:0 14px 14px 0;
 	background-color:#fff;
 	position:relative;
+	transition:all .5s ease;
+}
+.video-list:hover{
+	transform:translateY(-10px);
 }
 .video-image{
 	width:296px;
