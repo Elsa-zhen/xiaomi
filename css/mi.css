@@ -588,6 +588,7 @@
 }
 .left-bigpicture:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 10px 3px #757575;
 }
 .home-bottom-right{
 	width:978px;
@@ -608,6 +609,7 @@
 }
 .home-bottom-right-list:hover{
 	transform:translateY(-10px);  /*正为负，反为正；*/
+	box-shadow:0 0 10px 3px #757575;
 }
 
 
@@ -701,6 +703,7 @@
 }
 .home-only:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 10px 3px #757575;
 }
 .home-only-image{
 	width:80px;
@@ -798,6 +801,7 @@
 }
 .capacity-bottom-list:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 10px 3px #757575;
 }
 /*效果盒子*/
 .capacity-bottom-right-list-xiaoguo{
@@ -887,6 +891,7 @@
 }
 .capacity-only:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 10px 3px #757575;
 }
 .capacity-only-image{
 	width:80px;
@@ -987,6 +992,7 @@
 }
 .recommend-list:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 13px 3px #757575;
 }
 .recommend-list-picture{
 	width:140px;
@@ -1052,6 +1058,7 @@
 }
 .product-list:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 10px 3px #666;
 }
 .product-picture{
 	width:296px;
@@ -1130,6 +1137,7 @@
 }
 .content-list:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 15px 3px #757575;
 }
 .content-list h5{
 	height:24px;
@@ -1298,6 +1306,7 @@
 }
 .video-list:hover{
 	transform:translateY(-10px);
+	box-shadow:0 0 15px 3px #757575;
 }
 .video-image{
 	width:296px;
