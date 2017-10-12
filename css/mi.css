@@ -1323,6 +1323,7 @@
 	position:absolute;
 	left:0;
 	top:50%;
+	opacity:0;
 }
 .content-youjiantou{
 	width:20px;
@@ -1335,6 +1336,13 @@
 	position:absolute;
 	right:0;
 	top:50%;
+	opacity:0;
+}
+.content-list:hover .content-zuojiantou{
+	opacity:1;
+}
+.content-list:hover .content-youjiantou{
+	opacity:1;
 }
 	/*内容结束*/
 
