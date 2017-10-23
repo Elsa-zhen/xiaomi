@@ -211,7 +211,71 @@
     }
 }
 
+//为你推荐效果
+{
+  let left=document.querySelector(".recommend-zuoanniu");
+  let right=document.querySelector(".recommend-youanniu");
+  let nrbox=document.querySelector(".recommend-bottom");
+  let arrows=document.querySelector(".recommend-anniu");
+  // console.log(left,right,nrbox,arrows);
+    let num=0;
+    let dir="r";
+  right.onclick=rightFn;
+      function rightFn(){
+          right.classList.remove(".recommend-active");
+          left.classList.add(".recommend-active");
+          if(dir==="r"){
+              num++;
+              if(num==1){
+                  nrbox.style.marginLeft=-1226+"px";
+              }else if(num==2){
+                  nrbox.style.marginLeft=-1226*num+"px";
+              }
+          }
+          i=1;
+      }
+    let dirr="l";
+  left.onclick=leftFn;
+      function leftFn(){
+          left.classList.remove(".recommend-active");
+          right.classList.add(".recommend-active");
+          if(dirr==="l"){
+              num--;
+              if(num==0){
+                  nrbox.style.marginLeft=-1226+"px";
+              }else if(num==-1){
+                  nrbox.style.marginLeft="0";
+              }
+          }
+          i=0;
+      }
+}
 
+//banner左侧隐藏栏
+{
+    let banner=document.querySelector("#banner");
+    let leftlist=document.querySelector(".banner-list");
+    let lieObj=document.querySelectorAll(".banner-list-li");
+    let ycObj=document.querySelector(".banner-left-yc");
+    console.log(banner,leftlist,ycObj);
+
+    leftlist.onmouseover=function(){
+        ycObj.style.display="block";
+}
+    leftlist.onmouseout=function(){
+        ycObj.style.display="none";
+    }
+    ycObj.onmouseover=function(){
+        ycObj.style.display="black";
+    }
+    ycObj.onmouseout=function(){
+        ycObj.style.display="none";
+    }
+    banner.onmouseleave=function(){
+        ycObj.style.display="none";
+    }
+
+}
 
 
 
